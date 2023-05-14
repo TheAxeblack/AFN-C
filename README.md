@@ -1,5 +1,5 @@
 # AFN-C
-Ce repository contient l'implémentation en langage C d'automates finis non-déterministe (AFN) ainsi que les fonctions permettant de les manipuler.
+Ce repository contient l'implémentation en langage C d'(automates finis non-déterministe (AFN))[https://fr.wikipedia.org/wiki/Automate_fini_non_déterministe] ainsi que les fonctions permettant de les manipuler.
 Un AFN $(Q,A,T,I,F)$ est représenter comme suit :
 *   $Q = {1, 2, ..., n_q}$ est l'ensemble des états.
 *   Tous les symboles de $A$ sont numérotés de 1 à $n_a$.
