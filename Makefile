@@ -2,6 +2,7 @@ CC = gcc
 OPTIONS = -W -Wall -std=c89 -pedantic -O3
 INCLUDE = -Iinc
 
+all: principal
 principal: obj/ensemble.o obj/piles.o obj/automate.o obj/afn.o src/main.c
 	$(CC) $(OPTIONS) src/main.c obj/ensemble.o obj/piles.o obj/automate.o obj/afn.o -o principal
 obj/%.o: src/%.c

@@ -1,8 +1,8 @@
-#include "../inc/automate.h"
+#include "automate.h"
 #include <stdio.h>
 
 int AFN_analyser_mot(char *mot, afn a) {
-    int i, j, k;
+    int i;
     ensemble E, E_temp;
     pile P;
 

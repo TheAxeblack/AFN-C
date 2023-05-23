@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../inc/ensemble.h"
+#include "ensemble.h"
 
 int ENS_initialiser(ensemble e) {
     int i;

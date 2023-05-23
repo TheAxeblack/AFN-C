@@ -1,4 +1,4 @@
-#include "../inc/automate.h"
+#include "automate.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -34,7 +34,7 @@ int AFN_ajouter_transition(int p, char x, int r, afn a) {
 }
 
 int AFN_afficher(afn a) {
-    int i, j, k;
+    int i, j;
     printf("Etats initiaux : ");
     ENS_afficher(a->initial);
     printf("Etats finaux : ");

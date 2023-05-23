@@ -120,8 +120,10 @@ void test_PILE(void) {
 }
 
 void test_AFN_1(void) {
+    afn a;
+
     printf("\nTest des fonctions AFN module 1 :\n");
-    afn a = AFN_initialiser();
+    a = AFN_initialiser();
     AFN_rendre_initial(1, a);
     AFN_rendre_final(2, a);
     AFN_ajouter_transition(1, 'a', 2, a);
@@ -134,12 +136,11 @@ void test_AFN_1(void) {
 }
 
 int main(void) {
+    afn afn1;
 
     test_ENS();
     test_PILE();
     test_AFN_1();
-
-    afn afn1;
 
     printf("\nTest des fonctions AFN module 2 :\n");
 
