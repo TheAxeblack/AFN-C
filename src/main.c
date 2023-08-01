@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "../inc/automate.h"
 
-void test_ENS(void) {
+void test_ENS(void)
+{
     ensemble e1, e2, e3, e4, e5;
     int elem;
 
@@ -20,17 +21,22 @@ void test_ENS(void) {
     ENS_ajouter(9, e1);
     printf("e1 : ");
     ENS_afficher(e1);
-    if (ENS_appartient(5, e1)) {
+    if (ENS_appartient(5, e1))
+    {
         printf("5 appartient a e1\n");
     }
-    if (!ENS_appartient(7, e1)) {
+    if (!ENS_appartient(7, e1))
+    {
         printf("7 n'appartient pas a e1\n");
     }
 
     /* Test de ENS_estvide */
-    if (ENS_estvide(e2)) {
+    if (ENS_estvide(e2))
+    {
         printf("e2 est vide\n");
-    } else {
+    }
+    else
+    {
         printf("e2 n'est pas vide\n");
     }
 
@@ -79,14 +85,18 @@ void test_ENS(void) {
     ENS_afficher(e4);
 
     /* Test de ENS_egal */
-    if (ENS_egal(e1, e4)) {
+    if (ENS_egal(e1, e4))
+    {
         printf("e1 et e4 sont egaux\n");
-    } else {
+    }
+    else
+    {
         printf("e1 et e4 ne sont pas egaux\n");
     }
 }
 
-void test_PILE(void) {
+void test_PILE(void)
+{
     pile p;
     int elem;
 
@@ -100,9 +110,12 @@ void test_PILE(void) {
     printf("Contenu de la pile : ");
     PILE_afficher(p);
 
-    if (PILE_estvide(p)) {
+    if (PILE_estvide(p))
+    {
         printf("La pile est vide\n");
-    } else {
+    }
+    else
+    {
         printf("La pile n'est pas vide\n");
     }
 
@@ -119,7 +132,8 @@ void test_PILE(void) {
     PILE_afficher(p);
 }
 
-void test_AFN_1(void) {
+void test_AFN_1(void)
+{
     afn a;
 
     printf("\nTest des fonctions AFN module 1 :\n");
@@ -135,7 +149,8 @@ void test_AFN_1(void) {
     free(a);
 }
 
-int main(void) {
+int main(void)
+{
     afn afn1;
 
     test_ENS();
@@ -163,6 +178,3 @@ int main(void) {
     free(afn1);
     exit(EXIT_SUCCESS);
 }
-
-
-
