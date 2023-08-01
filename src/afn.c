@@ -14,7 +14,7 @@ int AFN_analyser_mot(char *mot, afn a)
     for (i = 0; mot[i] != '\0'; i++)
     {
         ENS_initialiser(E_temp); /* E_temp = vide */
-        ENS_affecter(E_temp, a->trans[ENS_retirer_un_element(E)][mot[i] - 'a']);
+        ENS_affecter(E_temp, a->trans[ENS_retirer_un_element(E)][mot[i] - 'a']); 
         while (!ENS_estvide(E_temp))
         {
             PILE_empiler(ENS_retirer_un_element(E_temp), P);

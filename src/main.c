@@ -128,8 +128,6 @@ void test_PILE(void)
     PILE_afficher(p);
 
     printf("élément dépilé : %d\n", elem);
-
-    PILE_afficher(p);
 }
 
 void test_AFN_1(void)
@@ -149,13 +147,9 @@ void test_AFN_1(void)
     free(a);
 }
 
-int main(void)
+void test_AFN_2(void)
 {
     afn afn1;
-
-    test_ENS();
-    test_PILE();
-    test_AFN_1();
 
     printf("\nTest des fonctions AFN module 2 :\n");
 
@@ -176,5 +170,14 @@ int main(void)
     AFN_analyser_mot("bababab", afn1);
 
     free(afn1);
+}
+
+int main(void)
+{
+    test_ENS();
+    test_PILE();
+    test_AFN_1();
+    test_AFN_2();
+
     exit(EXIT_SUCCESS);
 }
